@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TSMS</title>
+    <link rel="icon" href="img/logo.png">
+    <style>
+       body {
+     width: 360px;
+     height: 150px;
+     background: linear-gradient(90deg, rgba(255,138,0,1) 37%, rgba(236,255,21,0.9264924299149286) 70%);
+}
+
+.p1 {
+     position: static;
+     background: red;
+     spacing:230px;
+     background: linear-gradient(90deg, rgba(33,245,231,1) 38%, rgba(48,77,255,1) 76%);
+     border-radius:20px;
+     nim-height:100vh;
+}
+
+#input{
+    background: #6c6666;
+}
+
+#img{
+    width: 150px;
+    min-height: 100px;
+    background: yellow;
+}
+
+.p2{
+    
+    border-radius: 10px;
+    background: white;
+    
+}
+
+#m{
+    width:10px;
+}
+
+#qr{
+    
+    width:150px;
+}
+
+.p3{
+    background:grey;
+    border-radius: 90px 40px 90px 40px;
+}
+#fini{
+    background:grey;
+}
+#but{
+    background:yellow;
+    border-radius:10px;
+    transform: translate(275px, -2px);
+    padding: 8px 8px;
+}
+#qr{
+    border-radius:20px;
+}
+
+#inp{
+    border-radius:20px;
+    transform: translate(-20px, 0px);
+    padding: 7px 7px;
+}
+
+#h{
+    text-decoration: underline;
+    
+}
+ 
+    </style>
+</head>
+<body>
+    <div></div>
+    <div class="p1">
+        <center>
+            <h1 id="h">TSMS</h1>
+        </center>
+        <button id="but">rechercher</button>
+        <input id="inp" type="email" placeholder="Entrez votre recherche"required>
+        <p>Bienvenue dans TSMS(Tous Savoir sur Mon Site). TSMS est un site que j'ai conçu grâce à plusieurs langages. Dans ce site je vous détaillerai ces langages de programmations </p>
+    </div>
+    <div class="p2">
+         <center>
+            <img id="img" src="data:image/png;base64,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" alt="">
+         </center>
+            <p> HTML, ou HyperText Markup Language, est le langage standard utilisé pour créer des pages web. Il structure le contenu en utilisant des balises, qui définissent des éléments comme les titres, les paragraphes, les images et les liens. En somme, HTML est la base de toute création sur le web.</p>
+            <center>
+              <img id="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShLM6bm6ZjciWxfuuW0iHBbp8d6wUTYXBFxGyHQfJSNo8Nu7dvG9-OaZE&s" alt="">
+            </center>
+               <p>Le CSS, ou Cascading Style Sheets, est un langage de style utilisé pour décrire la présentation d'un document HTML ou XML. Il permet de contrôler l'apparence des éléments d'une page web, tels que les couleurs, les polices, les marges, les espacements et la disposition.</p>
+            <center>
+              <img id="img" src="data:image/png;base64,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" alt="">
+            </center>
+                <p>JavaScript est un langage de programmation dynamique et orienté objet, principalement utilisé pour le développement web. Il a été créé en 1995 par Brendan Eich et est devenu l'un des langages de programmation les plus populaires au monde.</p>
+    <div class='p3'>
+        <center>
+              <h3>-----pour en savoir plus appuyer sur --------le <a href="https://youtu.be/dQw4w9WgXcQ?si=_nnYIu3XwUEip7UE">lien</a> ou scanner le qrcode</h3>
+              <img id="qr" src="./img/qrcode.jpg" alt="">
+        </center>
+    </div> 
+        <footer>
+            <h4 id="fini">SITE ENTIÈREMENT FAIT PAR MOI MACTAR DIOP Acme Web Deisgn, Copyright &copy; 2019</h4>
+      
+      <p></p>
+      
+    </footer>
+</body>
+</html>
